@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #505f98;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+}
+
+.menu-list__item {
+  padding-right: 60px;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: #505f98;
+}
+
+.buy-btn {
+  width: 160px;
+  height: 26px;
+  cursor: pointer;
+  background: #111b47;
+  border-radius: 2px;
+  color: #fff;
+  border: none;
+}
+
+/*# sourceMappingURL=/style.6b54f5b7.css.map */
