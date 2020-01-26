@@ -7,6 +7,17 @@
 $bgColor: #111b47;
 $titleColor: #091133;
 
+@mixin title {
+  font-size: 50px;
+  font-weight: 500;
+  color: $titleColor;
+  line-height: 66px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #505f98;
   font-family: "Roboto", sans-serif;
@@ -43,12 +54,12 @@ header {
 
 .burger {
   display: none;
-  div{
-  width: 25px;
-  height: 3px;
-  margin: 5px;
-  background: $bgColor;
-}
+  div {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background: $bgColor;
+  }
 }
 
 .buy-btn {
@@ -85,17 +96,14 @@ header {
 }
 
 .hero-content__title {
-  font-size: 50px;
-  font-weight: 500;
-  color: $titleColor;
-  line-height: 66px;
+  @include title;
   padding-top: 20px;
 }
 
 .hero-content__description {
   font-size: 18px;
   line-height: 30px;
-  // padding: 20px 0 74px;
+  padding-top: 20px;
 }
 
 .hero-content-btn {
@@ -125,4 +133,40 @@ header {
   color: #111b47;
   padding: 10px 40px;
   text-decoration: none;
+}
+
+.about-content__title {
+  @include title;
+  padding-top: 160px;
+}
+
+.about-content__description {
+  font-size: 18px;
+  line-height: 30px;
+  padding-top: 16px;
+}
+
+.about-content-group {
+  display: flex;
+  padding-top: 80px;
+}
+
+.about-content-group1 {
+  padding-right: 30px;
+}
+
+.about-content-group__title {
+  color: $titleColor;
+  padding: 14px 0 6px;
+}
+
+.about-content-group__description {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.about__img {
+  width: 523px;
+  height: 523px;
+  margin: 109px 0 108px;
 }
