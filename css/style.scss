@@ -13,7 +13,6 @@ body {
 }
 .container {
   height: 100%;
-  border: 1px solid red;
 }
 nav {
   width: 100%;
@@ -68,33 +67,41 @@ header {
 
 .hero {
   height: 100vh;
-  position: relative;
-  background: url(../img/hero.png);
+  // position: relative;
+  background-image: url(../img/hero.png);
   background-size: 900px;
   background-position: center right;
   background-repeat: no-repeat;
 }
 
 .hero-content {
-  height: 540px;
-  width: 540px;
-  position: absolute;
-  top: 20%;
-  left: 0;
+  padding-top: 200px;
+  max-width: 60%;
+  // position: absolute;
+  // top: 20%;
+  // left: 0;
+  // margin: 0 auto;
   text-align: left;
-  margin-left: 85px;
 }
+
 .hero-content__title {
   font-size: 50px;
   font-weight: 500;
   color: $titleColor;
   line-height: 66px;
+  padding-top: 20px;
 }
+
 .hero-content__description {
   font-size: 18px;
   line-height: 30px;
-  padding: 20px 0 74px;
+  // padding: 20px 0 74px;
 }
+
+.hero-content-btn {
+  padding-top: 50px;
+}
+
 .hero-content__btn-purchase {
   padding: 10px 40px;
   font-size: 16px;
