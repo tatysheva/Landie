@@ -1,8 +1,14 @@
-// @media (max-width: 1200px) {
-//     .hero {
-//         // background-color: #4f5d96;
-//         background-image: none;
-//         color: red;}
+@media (max-width: 1200px) {
+    .hero {
+        background-color: #bfc8ec;
+        background-image: none !important; 
+    }
+
+    .hero-content {
+        padding-top: 100px !important;
+        max-width: 100% !important;
+    }
+}
         
 //   .menu {
 //     position: absolute;
